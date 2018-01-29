@@ -1,0 +1,43 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="OSK.master.cs" Inherits="OSK" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>OSK Master</title>
+</head>
+<body bgcolor="black" text="lime">
+    <form id="form1" runat="server">
+    <div id="DIV1" runat="server">
+        &nbsp;
+        <table style="visibility: visible; width: 100%; border-top-style: none; border-right-style: none;
+            border-left-style: none; position: absolute; border-bottom-style: none; z-index: 101;">
+            <tr>
+                <td colspan="3" style="height: 73px">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 36px; text-align: center">
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                    </asp:SiteMapPath>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 142px; height: 332px; text-align: center;">
+                    <asp:TreeView ID="tvwNavigation" runat="server" ForeColor="Lime" ShowLines="True">
+                    </asp:TreeView>
+                </td>
+                <td colspan="2" style="height: 332px">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 65px">
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
